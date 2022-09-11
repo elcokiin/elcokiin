@@ -1,20 +1,30 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useAppContext } from '../context'
 
-type Theme = 'dark' | 'light'
+type Theme = 'dark' | 'light' | 'system'
+type UseSystemTheme = {
+	theme: Theme
+	setTheme: (theme: Theme) => void
+}
 
 function getSystemTheme(): Theme {
 	return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
 
-export function useSystemTheme(): Theme {
-	const [theme, setTheme] = useState<Theme>(getSystemTheme())
+export function useSystemTheme(): UseSystemTheme {
+	const [localTheme, setLocalTheme] = useState<Theme>('')
+	const { theme, setTheme } = useAppContext()
 
 	useEffect(() => {
-		const listener = () => setTheme(getSystemTheme());
-		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', listener);
-		return () => window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', listener);
-	}, []);
+		if(theme === 'system') {
+			const systemTheme = getSystemTheme()
+			setTheme(systemTheme)
+			setLocalTheme(systemTheme)
+			const listener = () => setTheme(systemTheme)
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', listener)
+		}
+	}, [theme])
 
-	return theme;
+	return { localTheme, setTheme }
 }
 

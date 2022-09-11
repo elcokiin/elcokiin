@@ -1,10 +1,11 @@
-import { useState, useMemo, createContext, useContext } from 'react';
+import { useEffect, useState, useMemo, createContext, useContext } from 'react';
 import { Context } from './types';
 
 type Theme = 'dark' | 'light' | 'system'
+
 // context
 const Context = createContext<Context>({
-	theme: 'system',
+	theme: "",
 	setTheme: () => {},
 	//lenguage: 'en',
 	//setLenguage: () => {},
@@ -14,6 +15,14 @@ const Context = createContext<Context>({
 export function ContextProvider({ children }) {
 	const [theme, setTheme] = useState<Theme>('system')
 	//const [lenguage, setLenguage] = useState('es');
+
+	// useEffect
+	useEffect(() => {
+		const localTheme = localStorage.getItem('theme')
+		if (localTheme) {
+			setTheme(localTheme as Theme)
+		}
+	}, [])
 
 	// useMemo
 	const values = useMemo(() => ({

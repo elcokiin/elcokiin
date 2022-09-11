@@ -1,0 +1,27 @@
+.container {
+	position: absolute;
+	width: 100vw;
+	height: 501px;
+	left: -51px;
+	top: -45px;
+}
+
+.elipse {
+	position: absolute;
+	background: var(--cool-gray);
+	filter: blur(100px);
+}
+
+.elipse1 {
+	left: 0%;
+	right: 77.36%;
+	top: 78.84%;
+	bottom: 0%;
+}
+
+.elipse2 {
+	left: 68.16%;
+	right: 0%;
+	top: 0%;
+	bottom: 74.45%;
+}
