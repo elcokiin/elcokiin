@@ -17,7 +17,10 @@ const Header: NextPage = () => {
 				</Link>
 				<h1>Inicio</h1>
 			</div>
-			<GiHamburgerMenu className={styles.hamburger}/>
+			<GiHamburgerMenu 
+				className={styles.hamburger}
+				onClick={() => alert('click')}
+			/>
 		</div>
 	)
 }

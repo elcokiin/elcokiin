@@ -27,4 +27,5 @@
 .hamburger {
 	width: 36px;
 	height: 24px;
+	cursor: pointer;
 }

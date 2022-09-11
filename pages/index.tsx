@@ -6,6 +6,7 @@ import { useAppContext } from '../context'
 import Backgroud from '../components/Background'
 import Header from '../components/Header'
 import Categories from '../components/Categories'
+import NavBarMobile from '../components/NavBarMobile'
 
 // styles
 import styles from '../styles/Home.module.css'
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/mouse-dark.png" />
 			</Head>
 
+			<NavBarMobile />
 			<Backgroud />
 
 			<header className={styles.containerHeader}>
@@ -29,6 +31,7 @@ const Home: NextPage = () => {
 			</header>
 
 			<main></main>
+
 
 			<footer></footer>
 		</div>

@@ -1,0 +1,20 @@
+.navbar {
+	position: absolute;
+	width: 100%;
+	height: 44px;
+
+	bottom: -20px;
+	left: 4px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(180deg, #0A192F 0%, rgba(10, 25, 47, 0.96875) 46.35%, rgba(10, 25, 47, 0) 94.79%);
+	border-top: 1px solid var(--aquamarine);
+	backdrop-filter: blur(20px);
+}
+
+.icon {
+	width: 28px;
+	height: 24px;
+}
