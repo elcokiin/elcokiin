@@ -1,0 +1,55 @@
+.container {
+	position: relative;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	padding: 12px 30px;
+	padding-top: 0;
+	border-bottom: solid 1px var(--white);
+	overflow-x: scroll;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+.container a {
+	cursor: pointer;
+}
+
+.container span {
+	font-weight: 600;
+	font-size: 1rem;
+	padding: 0 12px;
+}
+
+.container:first-child {
+	padding-left: 0;
+}
+
+.container:last-child {
+	padding-right: 0;
+}
+
+.container:after {
+	content: "";
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: -18px;
+	top: 8px;
+	background: var(--oxford-blue);
+	filter: blur(8px);
+}
+
+.container:before {
+	content: "";
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	right: -18px;
+	top: 8px;
+	background: var(--oxford-blue);
+	filter: blur(8px);
+}
+

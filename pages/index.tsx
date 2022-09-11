@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
 		<div className={styles.container}>
       <Head>
-        <title>Inicio</title>
+        <title>Inicio - elcokiin</title>
         <meta name="description" content="Place to write and read other people" />
         <link rel="icon" href="/mouse-dark.png" />
 			</Head>
