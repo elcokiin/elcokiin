@@ -1,13 +1,13 @@
 import { useEffect, useState, useMemo, createContext, useContext } from 'react';
 
 type Theme = 'dark' | 'light' | 'system'
-type Context = {
-	theme: Theme
-	setTheme: (theme: Theme) => void
-}
+//type Context = {
+	//theme: Theme
+	//setTheme: (theme: Theme) => void
+//}
 
 // context
-const Context = createContext<Context>({
+const Context = createContext({
 	theme: "",
 	setTheme: () => {},
 	//lenguage: 'en',
