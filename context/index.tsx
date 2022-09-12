@@ -18,7 +18,7 @@ const Context = createContext({
 })
 
 // provider
-export function ContextProvider({ children }) {
+export function ContextProvider({ children }: Props) {
 	const [theme, setTheme] = useState<Theme>('system')
 	//const [lenguage, setLenguage] = useState('es');
 
