@@ -5,6 +5,9 @@ type Theme = 'dark' | 'light' | 'system'
 	//theme: Theme
 	//setTheme: (theme: Theme) => void
 //}
+type Props = {
+	children: React.ReactNode
+}
 
 // context
 const Context = createContext({
