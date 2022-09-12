@@ -1,7 +1,10 @@
 import { useEffect, useState, useMemo, createContext, useContext } from 'react';
-import { Context } from './types';
 
 type Theme = 'dark' | 'light' | 'system'
+type Context = {
+	theme: Theme
+	setTheme: (theme: Theme) => void
+}
 
 // context
 const Context = createContext<Context>({
