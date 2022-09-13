@@ -1,16 +1,17 @@
 //import Head from 'next/head'
 import type { AppProps } from 'next/app'
-import { ContextProvider } from '../context'
+//import { ContextProvider } from '../context'
 
 import '../styles/colors.css'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
-	return (
-		<ContextProvider>
-			<Component {...pageProps} />
-		</ContextProvider>
-	)
+	//return (
+		//<ContextProvider>
+			//<Component {...pageProps} />
+		//</ContextProvider>
+	//)
+	return <Component {...pageProps} />
 }
 
 export default MyApp
