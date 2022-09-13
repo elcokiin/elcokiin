@@ -9,13 +9,19 @@ type Props = {
 	children: React.ReactNode
 }
 
+// context
+const Context = createContext({
+	theme: 'system',
+	setTheme: () => {}
+})
+
 // provider
 export function ContextProvider({ children }: Props) {
 	const [theme, setTheme] = useState('system')
 	//const [lenguage, setLenguage] = useState('es');
 
 	// useEffect
-	useEffect(() => {
+	{}	useEffect(() => {
 		const localTheme = localStorage.getItem('theme')
 		if (localTheme) {
 			setTheme(localTheme as Theme)
