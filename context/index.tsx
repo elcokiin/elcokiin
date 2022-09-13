@@ -9,17 +9,9 @@ type Props = {
 	children: React.ReactNode
 }
 
-// context
-const Context = createContext({
-	theme: "",
-	setTheme: () => {},
-	//lenguage: 'en',
-	//setLenguage: () => {},
-})
-
 // provider
 export function ContextProvider({ children }: Props) {
-	const [theme, setTheme] = useState<Theme>('system')
+	const [theme, setTheme] = useState('system')
 	//const [lenguage, setLenguage] = useState('es');
 
 	// useEffect
