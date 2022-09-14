@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useAppContext } from '../context'
+//import { useAppContext } from '../context'
 
 // components
 import Backgroud from '../components/Background'
@@ -12,7 +12,7 @@ import NavBarMobile from '../components/NavBarMobile'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-	const { theme, setTheme } = useAppContext()
+	//const { theme, setTheme } = useAppContext()
 
   return (
 		<div className={styles.container}>
