@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,8 +9,6 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import styles from './Header.module.css'
 
 const Header: NextPage = () => {
-	const [showMenu, setShowMenu] = useState(false)
-	
 	return (
 		<div className={styles.container}>
 			<div className={styles.containerLogo}>
@@ -24,12 +21,8 @@ const Header: NextPage = () => {
 			</div>
 			<GiHamburgerMenu 
 				className={styles.hamburger}
-				onClick={() => setShowMenu(!showMenu)}
+				onClick={() => console.log('hamburger')}
 			/>
-
-			{
-				showMenu && <Menu />
-			}
 		</div>
 	)
 }
