@@ -2,8 +2,6 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Menu from '../Menu'
-
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 import styles from './Header.module.css'
@@ -19,10 +17,11 @@ const Header: NextPage = () => {
 				</Link>
 				<h1>Inicio</h1>
 			</div>
-			<GiHamburgerMenu 
-				className={styles.hamburger}
-				onClick={() => console.log('hamburger')}
-			/>
+			<Link href="/menuMobile">
+				<a>
+					<GiHamburgerMenu className={styles.hamburger} />
+				</a>
+			</Link>
 		</div>
 	)
 }

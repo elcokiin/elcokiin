@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-//import { useState } from 'react'
 import Head from 'next/head'
 //import { useAppContext } from '../context'
 
@@ -14,8 +13,6 @@ import Menu from '../components/Menu'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-	// for the moment, use props to pass the data
-	//const [menu, setMenu] = useState(false)
   return (
 		<div className={styles.container}>
       <Head>
@@ -23,8 +20,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Place to write and read other people" />
         <link rel="icon" href="/mouse-dark.png" />
 			</Head>
-
-			<Menu /> 
 
 			<NavBarMobile />
 			<Backgroud />

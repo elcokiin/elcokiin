@@ -1,17 +1,23 @@
 //import Head from 'next/head'
 import type { AppProps } from 'next/app'
-//import { ContextProvider } from '../context'
+import Head from 'next/head'
+
+import { wrapper } from '../store/store.ts'
 
 import '../styles/colors.css'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
-	//return (
-		//<ContextProvider>
-			//<Component {...pageProps} />
-		//</ContextProvider>
-	//)
-	return <Component {...pageProps} />
+	return (
+		<div>
+			<Head>
+				<title>Inicio - elcokiin</title>
+        <meta name="description" content="Place to write and read other people" />
+				<link rel="icon" href="/mouse-dark.png" />
+			</Head>
+			<Component {...pageProps} />
+		</div>
+	);
 }
 
-export default MyApp
+export default wrapper.withRedux(MyApp)

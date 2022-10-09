@@ -1,8 +1,4 @@
 .container {
-  position: absolute;
-	z-index: 100;
-	top: 0;
-	left: 0;
 	width: 100%;
 	min-height: 100%;
 	background-color: var(--oxford-blue);
@@ -23,6 +19,7 @@
 	width: 28px;
 	height: 28px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 /*Main*/

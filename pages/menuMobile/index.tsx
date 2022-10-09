@@ -1,7 +1,13 @@
 import { NextPage } from 'next'
+import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
-import Footer from '../Footer'
+ //redux 
+//import { useSelector } from 'react-redux'
+//import { selectAuthState } from '../../store/languageSlice.ts'
+
+import Footer from '../../components/Footer'
 // icons
 import { AiOutlineClose } from 'react-icons/ai'
 import { RiAccountCircleLine } from 'react-icons/ri'
@@ -13,6 +19,7 @@ import { FiMoon } from 'react-icons/fi'
 import styles from './Menu.module.css'
 
 const Menu: NextPage = () => {
+	// all of this in the redux
 	const buttonsLanguage = [
 		{
 			id: 1,
@@ -56,9 +63,16 @@ const Menu: NextPage = () => {
 
 	return (
 		<div className={styles.container}>
+			<Head>
+        <title>Menu - elcokiin</title>
+			</Head>
 			<div className={styles.header}>
 				<RiAccountCircleLine className={styles.icon} />
-				<AiOutlineClose className={styles.icon}/>
+				<Link href="/">
+					<a>
+						<AiOutlineClose className={styles.icon}	/>
+					</a>
+				</Link>
 			</div>
 			<main className={styles.main}>
 				<section>
