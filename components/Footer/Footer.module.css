@@ -1,7 +1,4 @@
 .container {
-	position: absolute;
-	bottom: -100%;
-	z-index: 100;
 	margin: auto 0;
 	bottom: 0;
 	width: 100%;

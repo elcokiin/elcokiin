@@ -7,15 +7,15 @@ import Backgroud from '../components/Background'
 import Header from '../components/Header'
 import Categories from '../components/Categories'
 import NavBarMobile from '../components/NavBarMobile'
-import Menu from '../components/Menu'
+import Posts from '../components/Posts'
 
 // styles
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-  return (
+	return (
 		<div className={styles.container}>
-      <Head>
+		<Head>
         <title>Inicio - elcokiin</title>
         <meta name="description" content="Place to write and read other people" />
         <link rel="icon" href="/mouse-dark.png" />
@@ -29,12 +29,14 @@ const Home: NextPage = () => {
 				<Categories />
 			</header>
 
-			<main></main>
+			<main>
+				<Posts />
+			</main>
 
 
 			<footer></footer>
 		</div>
-  )
+	)
 }
 
 export default Home
