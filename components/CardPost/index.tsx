@@ -49,7 +49,9 @@ const CardPost: NextPage<CardPostProps> = ( { cardPost }: CardPostProps ) => {
 			</div>
 			<div className={styles.categories}>
 				{cardPost.categories.map((category, index) => (
-					<CategoryButton key={index}>{category}</CategoryButton>
+					<div key={index}>
+						<CategoryButton>{category}</CategoryButton>
+					</div>
 				))}
 			</div>
 		</article>

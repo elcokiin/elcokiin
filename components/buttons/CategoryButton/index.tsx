@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import styles from './CategoryButton.module.css'
 
 type CategoryButtonProps = {
-    category: string
+    children: string
 }
 
 const CategoryButton: NextPage<CategoryButtonProps> = ( { children }: CategoryButtonProps ) => {
