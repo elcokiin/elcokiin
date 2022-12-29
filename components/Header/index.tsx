@@ -12,7 +12,7 @@ const Header: NextPage = () => {
 			<div className={styles.containerLogo}>
 				<Link href="/" className={styles.logo}>
 					<a>
-						<Image src="/mouse-dark.png" alt="logo" width={72} height={72} />
+						<Image src="/mouse-circle.png" alt="logo" width={52} height={52} />
 					</a>
 				</Link>
 				<h1>Inicio</h1>

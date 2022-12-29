@@ -14,6 +14,6 @@ export type CardPost = {
         name: string,
         avatar: string
     },
-    cover: string,
+    image: string,
 }
 

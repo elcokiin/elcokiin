@@ -16,7 +16,7 @@ export const posts: CardPost[] = [
 			name: 'John Doe',
 			avatar: '/gato-ufo.jfif'
 		},
-		cover: '/cover-space.jfif'
+		image: '/cover-space.jfif'
     },
     {
         id: 2,
@@ -32,7 +32,7 @@ export const posts: CardPost[] = [
             name: 'Diego Tenjo',
             avatar: '/gato-ufo.jfif'
         },
-        cover: '/cover-space.jfif'
+        image: '/cover-space.jfif'
     },
     {
         id: 3,
@@ -48,6 +48,6 @@ export const posts: CardPost[] = [
             name: 'John Doe',
             avatar: '/gato-ufo.jfif'
         },
-        cover: '/cover-space.jfif'
+        image: '/cover-space.jfif'
     },
 ]
