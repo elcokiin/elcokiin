@@ -4,7 +4,7 @@ import { BsSun } from 'react-icons/bs'
 import { FiMoon } from 'react-icons/fi'
 
 // utils
-import { setTheme, getSystemTheme } from '../../utils'
+import { setTheme, getSystemTheme } from './index'
 
 export const buttonsLanguage = [
     {

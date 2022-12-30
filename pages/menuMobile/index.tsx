@@ -14,8 +14,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { RiAccountCircleLine } from 'react-icons/ri'
 
 // data
-import { buttonsTheme, buttonsLanguage } from './menuMobile.data'
-
+import { buttonsTheme, buttonsLanguage } from '../../utils/menuMobile.data' 
 // styles
 import styles from './Menu.module.css'
 
