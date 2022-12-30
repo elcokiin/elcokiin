@@ -1,22 +1,12 @@
-import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import { languageSlice } from "./languageSlice";
-import { createWrapper } from "next-redux-wrapper";
+import { configureStore, combineReducers } from '@reduxjs/toolkit'
+import theme from './theme'
 
-const makeStore = () => configureStore({
-    reducer: {
-      [languageSlice.name]: languageSlice.reducer,
-    },
-    devTools: true,
+const rootReducer = combineReducers({
+    theme,
 })
 
-export type AppStore = ReturnType<typeof makeStore>;
-export type AppState = ReturnType<AppStore["getState"]>;
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  AppState,
-  unknown,
-  Action
->
+const store = configureStore({
+    reducer: rootReducer,
+})
 
-
-export const wrapper = createWrapper<AppStore>(makeStore)
+export default store
