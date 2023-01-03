@@ -16,14 +16,14 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
 	return (
 		<div>
+				<Backgroud />
 			<div className={styles.container}>
-				<Head>
+								<Head>
 					<title>Inicio - elcokiin</title>
 					<meta name="description" content="Place to write and read other people" />
 					<link rel="icon" href="/mouse-circle.png" />
 				</Head>
 
-				<Backgroud />
 
 				<header className={styles.containerHeader}>
 					<Header />
