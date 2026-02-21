@@ -12,7 +12,7 @@
  │                                                                  │
  │         /\           elcokiin@dev                                │
  │        /  \          ──────────────                              │
- │       /\   \         OS: Arch Linux x86_64                       │
+ │       /\   \         OS: Omarchy                                 │
  │      /      \        Editor: Neovim                              │
  │     /   ,,   \       Agent: OpenCode                             │
  │    /   |  |  -\      Shell: zsh                                  │
