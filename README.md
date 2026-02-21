@@ -1,25 +1,25 @@
-```
- ┌──────────────────────────────────────────────────────────────────┐
- │                                                                  │
- │   elcokiin@github ~ $ neofetch                                   │
- │                                                                  │
- │         /\           elcokiin@dev                                 │
- │        /  \          ──────────────                               │
- │       /\   \         OS: Arch Linux x86_64                        │
- │      /      \        Editor: Neovim                               │
- │     /   ,,   \       Agent: OpenCode                              │
- │    /   |  |  -\      Shell: zsh                                   │
- │   /_-''    ''-_\     Role: Full-Stack Developer                   │
- │                      Uptime: always shipping                      │
- │                                                                   │
- └──────────────────────────────────────────────────────────────────┘
-```
 <h1 align="center">
   Hi there! I'm Diego Tenjo
 </h1>
 <p align="center">
   <em>A Software Engineering Student & Developer, passionate about continuous learning and building robust tech solutions.</em>
 </p>
+```
+ ┌──────────────────────────────────────────────────────────────────┐
+ │                                                                  │
+ │   elcokiin@github ~ $ neofetch                                   │
+ │                                                                  │
+ │         /\           elcokiin@dev                                │
+ │        /  \          ──────────────                              │
+ │       /\   \         OS: Arch Linux x86_64                       │
+ │      /      \        Editor: Neovim                              │
+ │     /   ,,   \       Agent: OpenCode                             │
+ │    /   |  |  -\      Shell: zsh                                  │
+ │   /_-''    ''-_\     Role: Full-Stack Developer                  │
+ │                      Uptime: always shipping                     │
+ │                                                                  │
+ └──────────────────────────────────────────────────────────────────┘
+```
 
 ### `$ cat /etc/philosophy`
 
@@ -67,16 +67,6 @@ AGENT=opencode
 WORKFLOW=iterate fast, ship precise
 PHILOSOPHY="velocity traditional setups cannot match"
 ```
-
----
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=elcokiin&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=elcokiin&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" />
-</p>
 
 ---
 
